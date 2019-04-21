@@ -28,15 +28,16 @@ def Scrape():
 
     url = 'https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars'
     base_url = 'https://www.jpl.nasa.gov'
-    browser.visit(url) 
+    browser.visit(url)  
 
     # Navigate to the page with the full image
     browser.click_link_by_partial_text('FULL IMAGE')
 
     html = browser.html
-    soup = bs(html, 'html.parser')
+    notsoup = bs(html, 'html.parser')
 
-    image = soup.find(class_="fancybox-image")["src"]
+    #image = soup.find(class_="fancybox-image")["src"]
+    image = notsoup.find(class_="fancybox-image")["src"]
     featured_image_url = f"{base_url}{image}"
     featured_image_url
     hemi_dicts.append({"Text_Results": text_results})
@@ -137,3 +138,5 @@ def Scrape():
 
         hemi_dicts.append(hemi_dict)
     return hemi_dicts
+
+Scrape()
