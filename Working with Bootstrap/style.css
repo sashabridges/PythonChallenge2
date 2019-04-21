@@ -1,0 +1,36 @@
+div .dropdown-menu {align: right;}
+a .nav-link {align: right;}
+
+a .navbar-brand {
+	background-color: teal;
+}
+
+nav {
+	background-color: white;
+}
+
+body {
+  background-color: #F0F3F4;
+}
+.
+.cent {
+	background-color: white;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+div .visuals {
+	background-color: white;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+h1 {
+	text: teal;
+}
+
+h3 {
+	text: teal;
+}
